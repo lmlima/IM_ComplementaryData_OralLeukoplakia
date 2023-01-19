@@ -1,1 +1,2 @@
-# SkinLesion# IM_ComplementaryData_OralLeukoplakia
+# IM_ComplementaryData_OralLeukoplakia
+Official repository for code from the paper "On the importance of complementary data to histopathological image analysis of oral leukoplakia and carcinoma using deep neural networks" by Leandro Muniz de Lima, Maria Clara Falcão Ribeiro de Assis, Júlia Pessini Soares, Tânia Regina Grão-Velloso, Liliana Aparecida Pimenta de Barros, Danielle Resende Camisasca and Renato Antonio Krohling.

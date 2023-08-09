@@ -149,26 +149,7 @@ def main(_folder, _csv_path_train, _imgs_folder_train, _lr_init, _sched_factor, 
          _batch_size, _epochs, _early_stop, _weights, _model_name, _pretrained, _save_folder, _csv_path_test,
          _best_metric, _neurons_reducer_block, _comb_method, _comb_config, _use_meta_data, _metric_early_stop, _task,
          _task_dict):
-    meta_data_columns_12features = ["epitelio_alterado_0", "epitelio_alterado_1",
-                         "localizacao_ASSOALHO DE BOCA", "localizacao_LÍNGUA", "localizacao_LINGUA",
-                         "localizacao_LABIO", "localizacao_MUCOSA JUGAL", "localizacao_PALATO",
-                         "localizacao_FUNDO DE VESTÍBULO", "localizacao_MUCOSA LABIAL", "localizacao_PALATO ",
-                         "tamanho_maior"]
-    meta_data_columns_18features = [
-        "localizacao_ASSOALHO DE BOCA", "localizacao_LÍNGUA", "localizacao_LABIO", "localizacao_MUCOSA JUGAL",
-        "localizacao_PALATO", "localizacao_FUNDO DE VESTÍBULO", "localizacao_MUCOSA LABIAL",
-        "tamanho_maior",
-        "sexo_M", "sexo_F",
-        "uso_bebida_No passado", "uso_bebida_Não informado", "uso_bebida_Sim", "uso_bebida_Não",
-        "uso_cigarro_Sim", "uso_cigarro_Não informado", "uso_cigarro_Não", "uso_cigarro_No passado",
-    ]
-    meta_data_columns_22features = ["epitelio_alterado_0", "epitelio_alterado_1", "localizacao_ASSOALHO DE BOCA",
-                                    "localizacao_LÍNGUA", "localizacao_LINGUA", "localizacao_LABIO",
-                                    "localizacao_MUCOSA JUGAL", "localizacao_PALATO", "localizacao_FUNDO DE VESTÍBULO",
-                                    "localizacao_MUCOSA LABIAL", "localizacao_PALATO ", "tamanho_maior", "sexo_M",
-                                    "sexo_F", "uso_bebida_P", "uso_bebida_X", "uso_bebida_S", "uso_bebida_N",
-                                    "uso_cigarro_S", "uso_cigarro_X", "uso_cigarro_N", "uso_cigarro_P"]
-    # meta_data_columns = meta_data_columns_18features
+
     meta_data_columns = _task_dict[_task]["features"]
     _label_name = _task_dict[_task]["label"]
     _img_path_col = _task_dict[_task]["img_col"]

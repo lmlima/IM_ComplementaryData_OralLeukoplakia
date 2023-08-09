@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Autor: André Pacheco
-Email: pacheco.comp@gmail.com
-
-"""
 
 import sys
 
@@ -28,7 +23,7 @@ from sacred.observers import FileStorageObserver
 from raug.utils.loader import get_labels_frequency
 import numpy as np
 
-# Dataset download: https://data.mendeley.com/datasets/zr7vgbcyr2/1
+# Dataset download: https://data.mendeley.com/datasets/bbmmm4wgr8/4
 
 # Starting sacred experiment
 ex = Experiment()
